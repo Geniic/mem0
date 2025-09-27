@@ -6,7 +6,7 @@ COPY server/requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY server .
 
 EXPOSE 8888
 
