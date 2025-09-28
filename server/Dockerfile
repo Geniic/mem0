@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY server/requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt && pip install langchain_neo4j
 
 COPY server .
 
